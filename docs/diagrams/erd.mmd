@@ -1,0 +1,146 @@
+erDiagram
+  USERS ||--o| PROVIDER_PROFILES : "has (if mechanic or driver)"
+  USERS ||--o| CUSTOMER_PROFILES : "has (if customer)"
+  USERS ||--o{ CART_ITEMS : "fills"
+  USERS ||--o{ ORDERS : "places (customer)"
+  USERS |o--o{ ORDERS : "fulfils (mechanic or driver)"
+  SERVICES ||--o{ ORDERS : "ordered as"
+  ORDERS ||--|{ ORDER_ITEMS : "contains"
+  ORDERS ||--|| PAYMENTS : "paid by"
+  ORDERS ||--|{ ORDER_STATUS_HISTORY : "tracks"
+  ORDERS ||--o| REVIEWS : "rated by"
+  ORDERS ||--o{ CLAIMS : "after-sales"
+  USERS ||--o{ NOTIFICATIONS : "receives"
+  USERS |o--o{ AUDIT_LOG : "acts in"
+  PARTS ||--o{ CART_ITEMS : "added as"
+  PARTS ||--o{ ORDER_ITEMS : "sold as"
+
+  USERS {
+    int id PK
+    text name
+    text email UK "case-insensitive"
+    text phone "07XXXXXXXX"
+    text password_hash "bcrypt"
+    text role "customer | mechanic | driver | admin"
+    int is_active
+    text created_at
+  }
+  PROVIDER_PROFILES {
+    int user_id PK,FK
+    text area
+    text skills "or licence and experience"
+    text status "PENDING | APPROVED | SUSPENDED"
+    int is_online
+    text avatar_style "illustration only"
+    int approved_by FK
+    text approved_at
+  }
+  SERVICES {
+    int id PK
+    text name
+    text category
+    int price "UGX > 0"
+    int est_minutes
+    text provider_type "mechanic | driver"
+    int is_active
+  }
+  CUSTOMER_PROFILES {
+    int user_id PK,FK
+    text vehicle_make
+    text vehicle_model
+    text vehicle_body
+    text vehicle_colour
+    text last_area "area name, never GPS"
+  }
+  GARAGES {
+    int id PK
+    text name
+    text area
+    text landmark
+    real lat "business address"
+    real lng
+    text specialties
+    real rating
+  }
+  PARTS {
+    int id PK
+    text name
+    int price "UGX > 0"
+    int stock ">= 0"
+    int is_active
+  }
+  CART_ITEMS {
+    int id PK
+    int user_id FK
+    text kind "SERVICE | PART"
+    int ref_id
+    int qty "1-10"
+  }
+  ORDERS {
+    int id PK
+    text order_no UK
+    int customer_id FK
+    int mechanic_id FK "helper; null until accepted"
+    int service_id FK
+    text area
+    text landmark
+    text vehicle
+    text status "state machine"
+    int total_amount
+    int commission_amount
+    text paid_at
+    text accepted_at
+    text completed_at
+  }
+  ORDER_ITEMS {
+    int id PK
+    int order_id FK
+    text kind
+    text name "price snapshot"
+    int unit_price
+    int qty
+  }
+  PAYMENTS {
+    int id PK
+    int order_id FK,UK
+    text idempotency_key UK
+    text method "MOCK_MOMO | MOCK_AIRTEL"
+    text payer_phone_masked "07X XXX X123"
+    int amount
+    text status "PENDING | HELD | RELEASED | REFUNDED | FAILED"
+  }
+  ORDER_STATUS_HISTORY {
+    int id PK
+    int order_id FK
+    text from_status
+    text to_status
+    int changed_by FK
+    text created_at
+  }
+  REVIEWS {
+    int id PK
+    int order_id FK,UK
+    int rating "1-5"
+    text comment
+  }
+  CLAIMS {
+    int id PK
+    int order_id FK
+    text type "WARRANTY | DISPUTE"
+    text status "OPEN | REVISIT | REFUNDED | REJECTED"
+    text resolution_note
+  }
+  NOTIFICATIONS {
+    int id PK
+    int user_id FK
+    text message
+    int is_read
+  }
+  AUDIT_LOG {
+    int id PK
+    int actor_id FK
+    text action
+    text entity_id
+    text details
+    text created_at
+  }
