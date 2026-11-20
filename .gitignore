@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+.env
+.env.*
+!.env.example
+*.pem
+coverage/
+Thumbs.db
+*.zip
+data/*.db
+data/*.db-*
+backups/
+*.log
+.DS_Store
+.vercel

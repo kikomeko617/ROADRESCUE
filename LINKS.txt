@@ -1,0 +1,14 @@
+MGT3151 - ROADRESCUE - Group XX - submitted links
+=================================================
+
+Repository (GitHub):      https://github.com/<team>/roadrescue
+Hosted prototype:         https://<project>.vercel.app
+Report (PDF):             MGT3151_GroupXX_Report.pdf (inside the ZIP)
+Presentation (PPTX):      MGT3151_GroupXX_Presentation.pptx (inside the ZIP)
+
+Demo accounts (fictitious only):
+  Customer   sarah@roadrescue.test     Customer@1234
+  Mechanic   ssali@roadrescue.test     Mechanic@1234
+  Admin      admin@roadrescue.test     Admin@1234
+
+Run locally: npm install && npm run dev  ->  http://localhost:3000

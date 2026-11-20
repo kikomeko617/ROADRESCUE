@@ -1,0 +1,51 @@
+flowchart LR
+  subgraph Users["Users and channels"]
+    C["Customer<br/>phone or laptop browser"]
+    M["Mechanic<br/>phone browser"]
+    D["Driver<br/>phone browser"]
+    A["Admin<br/>laptop browser"]
+  end
+
+  subgraph Edge["Trust boundary 1: Internet to hosting (HTTPS / TLS)"]
+    MW["Middleware<br/>checks login cookie + role"]
+  end
+
+  subgraph App["Next.js app on Vercel (Node.js 20, serverless)"]
+    direction TB
+    UI["Presentation layer<br/>React pages and components<br/>(server + client components,<br/>Leaflet map, scroll effects)"]
+    SA["Server actions<br/>form handlers, input parsed with zod"]
+    subgraph Services["Application services (src/lib)"]
+      AU["Auth and sessions<br/>bcrypt, JWT, lockout"]
+      CA["Catalogue, search,<br/>helpers and garages near you"]
+      PR["Customer profile<br/>saved car and area"]
+      CT["Cart and pricing"]
+      OR["Orders and state machine<br/>payment escrow, stock"]
+      AD["Admin: approvals,<br/>inventory, claims"]
+      LOG["Audit log and<br/>notifications"]
+    end
+    UI --> SA --> Services
+  end
+
+  subgraph Ext["Integrations"]
+    PAY["Mock MoMo / Airtel sandbox<br/>(simulated in-app prompt)"]
+    MAP["OpenStreetMap tile servers<br/>(map pictures only, no account data)"]
+    GEO["Browser location<br/>(stays on the device;<br/>only the area name is sent)"]
+    FUT["Future, out of MVP scope:<br/>real MoMo API, SMS, live GPS"]
+  end
+
+  subgraph Data["Trust boundary 2: app to database (TLS, auth token)"]
+    DB[("libSQL database<br/>local SQLite file or Turso")]
+    BK[("JSON backups<br/>npm run db:backup")]
+  end
+
+  C -- "HTTPS GET / POST" --> MW
+  M -- "HTTPS GET / POST" --> MW
+  D -- "HTTPS GET / POST" --> MW
+  A -- "HTTPS GET / POST" --> MW
+  MW --> UI
+  C -. "HTTPS image requests" .-> MAP
+  C -. "permission prompt" .-> GEO
+  OR -. "simulated callback" .-> PAY
+  PAY -. "future" .-> FUT
+  Services -- "SQL over libSQL (HTTPS/WSS)<br/>parameterised queries" --> DB
+  DB -. "export / restore" .-> BK
