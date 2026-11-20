@@ -9,7 +9,6 @@ export async function applySchema(client) {
   const sql = fs.readFileSync(path.join(process.cwd(), "database", "schema.sql"), "utf8");
   await client.executeMultiple(sql);
 }
-
 export async function dropAll(client) {
   const tables = [
     "audit_log", "notifications", "claims", "reviews", "order_status_history", "payments",
