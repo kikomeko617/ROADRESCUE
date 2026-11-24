@@ -1,0 +1,23 @@
+ ✓ tests/roadrescue.test.js > Positive cases > TC01 - a new customer can register and log in; the password is stored hashed 406ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC02 - discover/search: searching 'tyre' finds the tyre service 5ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC03 - cart and order: totals and commission are correct and stock is reduced 49ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC04 - mock payment: approving holds the money; approving again does NOT charge twice 27ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC05 - fulfilment: mechanic accepts and finishes; customer confirms; payment is released 92ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC06 - after-sales: customer rates the mechanic and opens a warranty claim; admin sends a revisit 68ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC07 - cancelling a paid order refunds the payment and returns parts to stock 89ms
+ ✓ tests/roadrescue.test.js > Validation / error cases > TC08 - an invalid mobile-money number is rejected and no order is created 14ms
+ ✓ tests/roadrescue.test.js > Validation / error cases > TC09 - ordering more parts than are in stock fails and NOTHING changes (rollback) 75ms
+ ✓ tests/roadrescue.test.js > Validation / error cases > TC10 - wrong password is rejected, and 5 failures lock the account for 15 minutes 1107ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC11 - a customer cannot open admin pages or do mechanic/admin actions 4ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC12 - a customer cannot view another customer's order 4ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC13 - two mechanics accept the same job: only the first one gets it 31ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC14 - a mechanic waiting for approval cannot accept jobs; after admin approval they can 85ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC15 - a mechanic cannot skip steps (e.g. jump straight to 'done') 67ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC16 - a driver job can only be taken by a driver; the driver completes the trip 119ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC17 - a new driver starts as PENDING and can't take jobs until an admin approves them 337ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC18 - the customer's car and area are validated and remembered (area only, no GPS) 34ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC19 - step 1 'need' picks the right services; helpers and garages are sorted by distance 11ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC20 - map helpers: approximate positions are stable, and a GPS point maps to the nearest area 1ms
+ Test Files  1 passed (1)
+      Tests  20 passed (20)
+   Duration  8.39s (transform 320ms, setup 0ms, collect 1.01s, tests 6.61s, environment 0ms, prepare 326ms)

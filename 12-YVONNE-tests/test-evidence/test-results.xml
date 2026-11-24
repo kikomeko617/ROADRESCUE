@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="20" failures="0" errors="0" time="6.6117342">
+    <testsuite name="tests/roadrescue.test.js" timestamp="2026-11-19T15:43:23.710Z" hostname="MATTEYO" tests="20" failures="0" errors="0" skipped="0" time="6.6117342">
+        <testcase classname="tests/roadrescue.test.js" name="Positive cases &gt; TC01 - a new customer can register and log in; the password is stored hashed" time="0.4063198">
+            <system-err>
+[roadrescue] Using the development session secret. Set SESSION_SECRET before hosting.
+
+            </system-err>
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Positive cases &gt; TC02 - discover/search: searching &apos;tyre&apos; finds the tyre service" time="0.0051452">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Positive cases &gt; TC03 - cart and order: totals and commission are correct and stock is reduced" time="0.0487857">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Positive cases &gt; TC04 - mock payment: approving holds the money; approving again does NOT charge twice" time="0.0272557">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Positive cases &gt; TC05 - fulfilment: mechanic accepts and finishes; customer confirms; payment is released" time="0.0916456">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Positive cases &gt; TC06 - after-sales: customer rates the mechanic and opens a warranty claim; admin sends a revisit" time="0.0682194">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Positive cases &gt; TC07 - cancelling a paid order refunds the payment and returns parts to stock" time="0.0890518">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Validation / error cases &gt; TC08 - an invalid mobile-money number is rejected and no order is created" time="0.0138878">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Validation / error cases &gt; TC09 - ordering more parts than are in stock fails and NOTHING changes (rollback)" time="0.0751579">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Validation / error cases &gt; TC10 - wrong password is rejected, and 5 failures lock the account for 15 minutes" time="1.1070429">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Access control and integrity cases &gt; TC11 - a customer cannot open admin pages or do mechanic/admin actions" time="0.0038694">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Access control and integrity cases &gt; TC12 - a customer cannot view another customer&apos;s order" time="0.00404">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Access control and integrity cases &gt; TC13 - two mechanics accept the same job: only the first one gets it" time="0.0310187">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Access control and integrity cases &gt; TC14 - a mechanic waiting for approval cannot accept jobs; after admin approval they can" time="0.0851901">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Access control and integrity cases &gt; TC15 - a mechanic cannot skip steps (e.g. jump straight to &apos;done&apos;)" time="0.06696">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Drivers, the request wizard and the map &gt; TC16 - a driver job can only be taken by a driver; the driver completes the trip" time="0.1188277">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Drivers, the request wizard and the map &gt; TC17 - a new driver starts as PENDING and can&apos;t take jobs until an admin approves them" time="0.3372188">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Drivers, the request wizard and the map &gt; TC18 - the customer&apos;s car and area are validated and remembered (area only, no GPS)" time="0.0339978">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Drivers, the request wizard and the map &gt; TC19 - step 1 &apos;need&apos; picks the right services; helpers and garages are sorted by distance" time="0.0109064">
+        </testcase>
+        <testcase classname="tests/roadrescue.test.js" name="Drivers, the request wizard and the map &gt; TC20 - map helpers: approximate positions are stable, and a GPS point maps to the nearest area" time="0.0011755">
+        </testcase>
+    </testsuite>
+</testsuites>

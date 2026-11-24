@@ -1,0 +1,27 @@
+PASS | Home page loads
+PASS | Search finds 'tyre' service
+PASS | Protected page redirects to login
+PASS | Wrong password shows an error
+PASS | After login the customer is asked what they need
+PASS | Customer picks a need and tells us their car (make, type, model, colour)
+PASS | Customer chooses their area on the map page and sees matching services
+PASS | Customer opens service and adds to cart
+PASS | Customer adds a battery to the cart
+PASS | Checkout rejects an invalid phone number
+PASS | Checkout with valid details goes to mock payment
+PASS | Approving mock payment starts the search
+PASS | Mechanic sees the job and accepts it
+PASS | Mechanic moves job: on the way -> arrived -> done
+PASS | Mechanic does not see the driver job
+PASS | Mechanic cannot open admin pages
+PASS | Driver sees the driver job and takes the trip
+PASS | Driver cannot open the mechanic dashboard
+PASS | Customer confirms, payment released
+PASS | Customer leaves a review and opens a warranty claim
+PASS | Customer cannot open the mechanic dashboard
+PASS | Admin dashboard shows metrics
+PASS | Admin approves the pending mechanic
+PASS | Admin resolves the warranty claim
+PASS | Admin inventory shows reduced battery stock
+PASS | Audit log records the payment and status changes
+PASS | Works on a phone screen
