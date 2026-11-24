@@ -4,7 +4,7 @@
 
 ROADRESCUE is an e-commerce prototype for **MGT3151 E-Business, E-Commerce and E-Governance** (Uganda Christian University, Option B: E-Commerce). A driver whose car breaks down can order a verified mechanic, a tow truck or a safe driver to wherever they are, at a fixed price they see first. They pay with a **mock** mobile-money payment that is held until they confirm the job is done.
 
-> ⚠️ This is a bounded prototype. **All people, cars and payments are fictitious. Payments are simulated.** It never asks for or stores PINs, OTPs, card numbers or National ID numbers.
+> This is a bounded prototype. **All people, cars and payments are fictitious. Payments are simulated.** It never asks for or stores PINs, OTPs, card numbers or National ID numbers.
 
 ---
 
