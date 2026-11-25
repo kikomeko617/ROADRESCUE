@@ -1,0 +1,18 @@
+stateDiagram-v2
+  [*] --> PENDING_PAYMENT: customer checks out
+  PENDING_PAYMENT --> SEARCHING: mock payment approved (money HELD)
+  PENDING_PAYMENT --> CANCELLED: customer / admin cancels
+  SEARCHING --> ACCEPTED: approved helper of the right kind accepts (mechanic or driver, first one wins)
+  SEARCHING --> CANCELLED: cancel (refund)
+  ACCEPTED --> EN_ROUTE: helper on the way
+  ACCEPTED --> CANCELLED: cancel (refund)
+  EN_ROUTE --> IN_PROGRESS: mechanic arrives / driver picks up
+  IN_PROGRESS --> AWAITING_CONFIRMATION: helper marks done
+  AWAITING_CONFIRMATION --> COMPLETED: customer confirms (money RELEASED)
+  AWAITING_CONFIRMATION --> DISPUTED: customer reports a problem
+  DISPUTED --> COMPLETED: admin rejects dispute (pay helper)
+  DISPUTED --> REFUNDED: admin refunds
+  COMPLETED --> REFUNDED: warranty claim refunded
+  COMPLETED --> [*]
+  CANCELLED --> [*]
+  REFUNDED --> [*]
