@@ -23,6 +23,8 @@
 5. Deploy. Open the `https://<project>.vercel.app` link and log in with a demo account.
 6. Every `git push` to `main` redeploys automatically.
 
+**Our deployment (25 Nov 2026):** https://roadrescue-lime.vercel.app, built from the `main` branch of https://github.com/matthewzeus/ROADRESCUE. The Turso database is in AWS `us-east-1`, next to Vercel's default function region (Washington, D.C.), because each page makes several database queries from the server; users in Uganda make only one round trip per page. The first deployment returned HTTP 500 on database pages until the three environment variables were added and the project was redeployed.
+
 To reset the hosted demo data before presenting, run `npm run db:reset` with the Turso `.env` in place. Take a backup first with `npm run db:backup`.
 
 ## Option 2: local or offline (fallback)

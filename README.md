@@ -2,6 +2,8 @@
 
 **Break down. Get moving. Get your car back.**
 
+**Live prototype:** https://roadrescue-lime.vercel.app  •  **Demo accounts:** see below  •  **Group 6** (MGT3151, Advent 2026)
+
 ROADRESCUE is an e-commerce prototype for **MGT3151 E-Business, E-Commerce and E-Governance** (Uganda Christian University, Option B: E-Commerce). A driver whose car breaks down can order a verified mechanic, a tow truck or a safe driver to wherever they are, at a fixed price they see first. They pay with a **mock** mobile-money payment that is held until they confirm the job is done.
 
 > This is a bounded prototype. **All people, cars and payments are fictitious. Payments are simulated.** It never asks for or stores PINs, OTPs, card numbers or National ID numbers.
@@ -141,7 +143,7 @@ roadrescue/
 │   └── components/            # shared UI pieces (map, scroll effects, avatars, dashboards...)
 ├── tests/                     # automated test cases (Vitest)
 ├── test-evidence/             # test results and screenshots
-└── docs/                      # architecture, data design, security, testing, roles, AI declaration
+└── docs/                      # architecture, data design, security, testing, roles
 ```
 
 ## Tech stack and versions
@@ -168,4 +170,3 @@ Exact versions are pinned in `package.json`, and `package-lock.json` locks every
 - [`docs/TESTING.md`](docs/TESTING.md): test plan and test case table with results
 - [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md): hosting steps, assumptions and limitations
 - [`docs/ROLE_MATRIX.md`](docs/ROLE_MATRIX.md): who owns which part, and how to commit
-- [`docs/AI_DECLARATION.md`](docs/AI_DECLARATION.md): declaration of generative AI use (required by the exam)

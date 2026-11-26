@@ -13,7 +13,7 @@ The brief asks for at least 8 test cases: 5 positive, 2 validation/error and 1 a
 
 ## Test cases
 
-All 20 passed on 19 Nov 2026 (Vitest 3.2.6, Node 26). Run `npm test` to repeat them.
+All 20 passed on 19 Nov 2026 and again on 25 Nov 2026 (Vitest 3.2.6, Node 26; latest output in `test-evidence/unit-test-output-2026-11-25.txt`). Run `npm test` to repeat them.
 
 | ID | Type | Test case | Input / steps | Expected result | Actual result | Evidence | Status |
 |---|---|---|---|---|---|---|---|
@@ -82,3 +82,4 @@ Manual checklist:
 | D5 | Visual review (1.1) | Map showed "API KEY REQUIRED" - the CARTO dark tiles now need an account | Switched to OpenStreetMap tiles, made navy with a CSS filter | Fixed |
 | D6 | Browser walkthrough (1.1) | On the "Where are you?" map, garage pins covered the area names, so an area couldn't be tapped | Area names are drawn above all other pins | Fixed, e2e step 7 |
 | D7 | Visual review (1.1) | In card grids the first card sat higher than the rest (extra top margin on later cards) | No extra margin inside grids | Fixed |
+| D8 | Deployment check (25 Nov) | The hosted home and services pages returned HTTP 500 after the first Vercel deployment | The database settings and session secret were missing on Vercel; added them and redeployed | Fixed |

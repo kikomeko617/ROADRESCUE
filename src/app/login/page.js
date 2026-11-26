@@ -43,7 +43,6 @@ export default async function LoginPage({ searchParams }) {
             <li>Customer with a saved car: daniel@roadrescue.test / Customer@1234</li>
             <li>Mechanic: ssali@roadrescue.test / Mechanic@1234</li>
             <li>Driver: brenda@roadrescue.test / Driver@1234</li>
-            <li>Admin: admin@roadrescue.test / Admin@1234</li>
           </ul>
         </details>
       </div>

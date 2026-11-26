@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1556" height="592" viewBox="0 0 1556 592" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e3a5f"/></marker>
+  <marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker></defs>
+<rect x="0" y="0" width="1556" height="592" fill="#fff"/>
+<rect x="4" y="30" width="1548" height="184" fill="#f4f7fb" stroke="#9fb3c8" stroke-width="1.2"/>
+<rect x="4" y="30" width="76" height="184" fill="#1e3a5f"/>
+<text x="42" y="127" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#fff">Motorist</text>
+<rect x="4" y="222" width="1548" height="92" fill="#ffffff" stroke="#9fb3c8" stroke-width="1.2"/>
+<rect x="4" y="222" width="76" height="92" fill="#1e3a5f"/>
+<text x="42" y="265.5" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#fff">Friends /</text>
+<text x="42" y="280.5" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#fff">contacts</text>
+<rect x="4" y="322" width="1548" height="92" fill="#f4f7fb" stroke="#9fb3c8" stroke-width="1.2"/>
+<rect x="4" y="322" width="76" height="92" fill="#1e3a5f"/>
+<text x="42" y="358" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#fff">Informal</text>
+<text x="42" y="373" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#fff">mechanic</text>
+<text x="42" y="388" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#fff">(fundi)</text>
+<rect x="4" y="422" width="1548" height="92" fill="#ffffff" stroke="#9fb3c8" stroke-width="1.2"/>
+<rect x="4" y="422" width="76" height="92" fill="#1e3a5f"/>
+<text x="42" y="465.5" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#fff">Tow</text>
+<text x="42" y="480.5" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#fff">operator</text>
+<polyline points="165,80 211,80" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="309,80 342,80" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="402,80 547,80" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<rect x="409" y="65" width="23.700000000000003" height="13" fill="#fff" opacity="0.92"/>
+<text x="412" y="75" text-anchor="start" font-size="10.5" font-style="italic" fill="#333">Yes</text>
+<polyline points="372,110 372,172 435,172" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<rect x="374" y="120" width="17.8" height="13" fill="#fff" opacity="0.92"/>
+<text x="377" y="130" text-anchor="start" font-size="10.5" font-style="italic" fill="#333">No</text>
+<polyline points="484,199 484,245" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="533,272 596,272 596,107" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="645,80 652,80 652,372 678,372" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="708,342 708,172 533,172" fill="none" stroke="#c62828" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ahr)"/>
+<rect x="710" y="316" width="141.70000000000002" height="13" fill="#fff" opacity="0.92"/>
+<text x="713" y="326" text-anchor="start" font-size="10.5" font-style="italic" fill="#c62828">No: try the next number</text>
+<polyline points="738,372 771,372" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<rect x="745" y="357" width="23.700000000000003" height="13" fill="#fff" opacity="0.92"/>
+<text x="748" y="367" text-anchor="start" font-size="10.5" font-style="italic" fill="#333">Yes</text>
+<polyline points="869,372 932,372 932,107" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="981,80 1044,80 1044,345" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="1093,372 1126,372" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="1186,372 1219,372" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<rect x="1193" y="357" width="23.700000000000003" height="13" fill="#fff" opacity="0.92"/>
+<text x="1196" y="367" text-anchor="start" font-size="10.5" font-style="italic" fill="#333">Yes</text>
+<polyline points="1156,402 1156,472 1219,472" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<rect x="1158" y="412" width="17.8" height="13" fill="#fff" opacity="0.92"/>
+<text x="1161" y="422" text-anchor="start" font-size="10.5" font-style="italic" fill="#333">No</text>
+<polyline points="1268,345 1268,199" fill="none" stroke="#c62828" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ahr)"/>
+<rect x="1270" y="319" width="59.1" height="13" fill="#fff" opacity="0.92"/>
+<text x="1273" y="329" text-anchor="start" font-size="10.5" font-style="italic" fill="#c62828">Exception</text>
+<polyline points="1317,372 1380,372 1380,107" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="1429,80 1475,80" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<polyline points="1317,472 1363,472" fill="none" stroke="#1e3a5f" stroke-width="1.6"  marker-end="url(#ah)"/>
+<circle cx="148" cy="80" r="17" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="148" y="110" text-anchor="middle" font-size="10.5" fill="#1b1b1b">Car breaks</text>
+<text x="148" y="122" text-anchor="middle" font-size="10.5" fill="#1b1b1b">down</text>
+<rect x="211" y="53" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="260" y="71.06666666666668" text-anchor="middle" font-size="11"  fill="#1b1b1b">Check the car,</text>
+<text x="260" y="83.66666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">guess the</text>
+<text x="260" y="96.26666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">problem</text>
+<polygon points="372,50 402,80 372,110 342,80" fill="#fff8e1" stroke="#b26a00" stroke-width="2"/>
+<text x="372" y="86" text-anchor="middle" font-size="18" font-weight="bold" fill="#b26a00">&#215;</text>
+<text x="372" y="32" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1b1b1b">Knows a</text>
+<text x="372" y="44" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1b1b1b">mechanic?</text>
+<rect x="435" y="145" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="484" y="163.06666666666666" text-anchor="middle" font-size="11"  fill="#1b1b1b">Ask friends and</text>
+<text x="484" y="175.66666666666666" text-anchor="middle" font-size="11"  fill="#1b1b1b">family for a</text>
+<text x="484" y="188.26666666666665" text-anchor="middle" font-size="11"  fill="#1b1b1b">number</text>
+<rect x="435" y="245" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="484" y="263.06666666666666" text-anchor="middle" font-size="11"  fill="#1b1b1b">Suggest a</text>
+<text x="484" y="275.6666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">mechanic they</text>
+<text x="484" y="288.2666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">once used</text>
+<rect x="547" y="53" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="596" y="71.06666666666668" text-anchor="middle" font-size="11"  fill="#1b1b1b">Phone the</text>
+<text x="596" y="83.66666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">mechanic,</text>
+<text x="596" y="96.26666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">haggle price</text>
+<polygon points="708,342 738,372 708,402 678,372" fill="#fff8e1" stroke="#b26a00" stroke-width="2"/>
+<text x="708" y="378" text-anchor="middle" font-size="18" font-weight="bold" fill="#b26a00">&#215;</text>
+<text x="708" y="415" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1b1b1b">Available and</text>
+<text x="708" y="427" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1b1b1b">price agreed?</text>
+<rect x="771" y="345" width="98" height="54" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="3" />
+<text x="820" y="363.06666666666666" text-anchor="middle" font-size="11" font-weight="bold" fill="#7f0000">B1 BOTTLENECK</text>
+<text x="820" y="375.6666666666667" text-anchor="middle" font-size="11"  fill="#7f0000">Travel across</text>
+<text x="820" y="388.2666666666667" text-anchor="middle" font-size="11"  fill="#7f0000">town in traffic</text>
+<rect x="883" y="53" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="932" y="71.06666666666668" text-anchor="middle" font-size="11"  fill="#1b1b1b">Explain the</text>
+<text x="932" y="83.66666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">location by</text>
+<text x="932" y="96.26666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">phone, repeatedly</text>
+<rect x="995" y="345" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="1044" y="363.06666666666666" text-anchor="middle" font-size="11"  fill="#1b1b1b">Diagnose; may</text>
+<text x="1044" y="375.6666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">go to buy parts</text>
+<text x="1044" y="388.2666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">(e.g. Katwe)</text>
+<polygon points="1156,342 1186,372 1156,402 1126,372" fill="#fff8e1" stroke="#b26a00" stroke-width="2"/>
+<text x="1156" y="378" text-anchor="middle" font-size="18" font-weight="bold" fill="#b26a00">&#215;</text>
+<text x="1156" y="336" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#1b1b1b">Fixable here?</text>
+<rect x="1219" y="345" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="1268" y="375.6666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">Repair the car</text>
+<rect x="1219" y="145" width="98" height="54" rx="8" fill="#fff" stroke="#c62828" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="1268" y="163.06666666666666" text-anchor="middle" font-size="11"  fill="#7f0000">Fault returns:</text>
+<text x="1268" y="175.66666666666666" text-anchor="middle" font-size="11"  fill="#7f0000">no record, no</text>
+<text x="1268" y="188.26666666666665" text-anchor="middle" font-size="11"  fill="#7f0000">one to claim from</text>
+<rect x="1331" y="53" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="1380" y="71.06666666666668" text-anchor="middle" font-size="11"  fill="#1b1b1b">Pay cash / MoMo</text>
+<text x="1380" y="83.66666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">up front,</text>
+<text x="1380" y="96.26666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">no receipt</text>
+<circle cx="1492" cy="80" r="17" fill="#e8f5e9" stroke="#2e7d32" stroke-width="4"/>
+<text x="1492" y="110" text-anchor="middle" font-size="10.5" fill="#1b1b1b">Moving again,</text>
+<text x="1492" y="122" text-anchor="middle" font-size="10.5" fill="#1b1b1b">no warranty</text>
+<rect x="1219" y="445" width="98" height="54" rx="8" fill="#fff" stroke="#1e3a5f" stroke-width="1.6" />
+<text x="1268" y="463.06666666666666" text-anchor="middle" font-size="11"  fill="#1b1b1b">Find a tow truck</text>
+<text x="1268" y="475.6666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">by phone;</text>
+<text x="1268" y="488.2666666666667" text-anchor="middle" font-size="11"  fill="#1b1b1b">negotiate and tow</text>
+<circle cx="1380" cy="472" r="17" fill="#e8f5e9" stroke="#2e7d32" stroke-width="4"/>
+<text x="1380" y="502" text-anchor="middle" font-size="10.5" fill="#1b1b1b">Car left at</text>
+<text x="1380" y="514" text-anchor="middle" font-size="10.5" fill="#1b1b1b">a garage</text>
+<text x="12" y="556" font-size="11" font-weight="bold" fill="#333">Legend:</text>
+<circle cx="73" cy="552" r="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="88" y="556" font-size="11" fill="#333">Start event</text>
+<circle cx="187" cy="552" r="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="4"/>
+<text x="202" y="556" font-size="11" fill="#333">End event</text>
+<rect x="280" y="543" width="28" height="18" rx="4" fill="#fff" stroke="#1e3a5f" stroke-width="1.6"/>
+<text x="316" y="556" font-size="11" fill="#333">Activity</text>
+<polygon points="398,542 408,552 398,562 388,552" fill="#fff8e1" stroke="#b26a00" stroke-width="2"/>
+<text x="416" y="556" font-size="11" fill="#333">Exclusive gateway (decision)</text>
+<rect x="608" y="543" width="28" height="18" rx="4" fill="#fff" stroke="#c62828" stroke-dasharray="5 4" stroke-width="1.6"/>
+<text x="644" y="556" font-size="11" fill="#333">Exception path</text>
+<rect x="752" y="543" width="28" height="18" rx="4" fill="#ffebee" stroke="#c62828" stroke-width="3"/>
+<text x="788" y="556" font-size="11" fill="#333">Measured bottleneck (B1)</text>
+<line x1="956" y1="552" x2="984" y2="552" stroke="#1e3a5f" stroke-width="1.6" stroke-dasharray="6 4"/>
+<text x="992" y="556" font-size="11" fill="#333">Dependency / message</text>
+</svg>

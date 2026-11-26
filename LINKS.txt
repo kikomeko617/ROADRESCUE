@@ -1,14 +1,18 @@
-MGT3151 - ROADRESCUE - Group XX - submitted links
+MGT3151 - ROADRESCUE - Group 06 - submitted links
 =================================================
 
-Repository (GitHub):      https://github.com/<team>/roadrescue
-Hosted prototype:         https://<project>.vercel.app
-Report (PDF):             MGT3151_GroupXX_Report.pdf (inside the ZIP)
-Presentation (PPTX):      MGT3151_GroupXX_Presentation.pptx (inside the ZIP)
+Repository (GitHub, public):  https://github.com/matthewzeus/ROADRESCUE
+Hosted prototype:             https://roadrescue-lime.vercel.app
+Report (PDF):                 MGT3151_Group06_Report.pdf (Word source MGT3151_Group06_Report.docx inside the ZIP)
+Presentation (PPTX):          MGT3151_Group06_Presentation.pptx
+Submission archive:           MGT3151_Group06_Submission.zip
 
 Demo accounts (fictitious only):
   Customer   sarah@roadrescue.test     Customer@1234
+  Customer   daniel@roadrescue.test    Customer@1234   (car and area already saved)
   Mechanic   ssali@roadrescue.test     Mechanic@1234
+  Driver     brenda@roadrescue.test    Driver@1234
   Admin      admin@roadrescue.test     Admin@1234
 
 Run locally: npm install && npm run dev  ->  http://localhost:3000
+Run tests:   npm test

@@ -1,0 +1,33 @@
+﻿ROADRESCUE automated tests - run on 2026-11-25 15:29 (Kampala time), Node v26.13.1, Vitest 3.2.6
+
+ RUN  v3.2.6 C:/Users/DELL/Downloads/roadrescue/roadrescue
+
+stderr | tests/roadrescue.test.js > Positive cases > TC01 - a new customer can register and log in; the password is stored hashed
+[roadrescue] Using the development session secret. Set SESSION_SECRET before hosting.
+System.Management.Automation.RemoteException
+ ✓ tests/roadrescue.test.js > Positive cases > TC01 - a new customer can register and log in; the password is stored hashed 1020ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC02 - discover/search: searching 'tyre' finds the tyre service 13ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC03 - cart and order: totals and commission are correct and stock is reduced 122ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC04 - mock payment: approving holds the money; approving again does NOT charge twice 65ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC05 - fulfilment: mechanic accepts and finishes; customer confirms; payment is released 172ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC06 - after-sales: customer rates the mechanic and opens a warranty claim; admin sends a revisit 62ms
+ ✓ tests/roadrescue.test.js > Positive cases > TC07 - cancelling a paid order refunds the payment and returns parts to stock 78ms
+ ✓ tests/roadrescue.test.js > Validation / error cases > TC08 - an invalid mobile-money number is rejected and no order is created 15ms
+ ✓ tests/roadrescue.test.js > Validation / error cases > TC09 - ordering more parts than are in stock fails and NOTHING changes (rollback) 79ms
+ ✓ tests/roadrescue.test.js > Validation / error cases > TC10 - wrong password is rejected, and 5 failures lock the account for 15 minutes 1183ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC11 - a customer cannot open admin pages or do mechanic/admin actions 3ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC12 - a customer cannot view another customer's order 2ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC13 - two mechanics accept the same job: only the first one gets it 23ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC14 - a mechanic waiting for approval cannot accept jobs; after admin approval they can 90ms
+ ✓ tests/roadrescue.test.js > Access control and integrity cases > TC15 - a mechanic cannot skip steps (e.g. jump straight to 'done') 67ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC16 - a driver job can only be taken by a driver; the driver completes the trip 130ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC17 - a new driver starts as PENDING and can't take jobs until an admin approves them 326ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC18 - the customer's car and area are validated and remembered (area only, no GPS) 31ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC19 - step 1 'need' picks the right services; helpers and garages are sorted by distance 9ms
+ ✓ tests/roadrescue.test.js > Drivers, the request wizard and the map > TC20 - map helpers: approximate positions are stable, and a GPS point maps to the nearest area 1ms
+
+ Test Files  1 passed (1)
+      Tests  20 passed (20)
+   Start at  15:29:50
+   Duration  12.02s (transform 489ms, setup 0ms, collect 1.24s, tests 9.47s, environment 1ms, prepare 603ms)
+

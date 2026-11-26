@@ -62,6 +62,24 @@ git push -u origin <your-name>/<area>
 
 Using pull requests gives you a review history, which is good evidence for "peer verification".
 
+## What actually happened (main branch, 25 Nov 2026)
+
+| Date | GitHub account | Member | What was committed | Note |
+|---|---|---|---|---|
+| 20 Nov | matthewzeus | Matthew | Project base (step 1) | As planned |
+| 20 Nov | Kikomeka Ibrahim / kikomeko617 | Ibrahim | Database and seed data | The plan gave the database to Abraham; Abraham and Ibrahim swapped areas |
+| 20 Nov | Elvis | Elvis | Auth, sessions, validation | As planned |
+| 20 Nov | Hussy | Hussinah | Fulfilment, notifications, admin logic, audit log | Pull request #3 |
+| 23 Nov | K-Kirsty | Christina | Accounts, dashboards, admin pages | Pull request #4 |
+| 24 Nov | GLADYS8888AYAA | Gladys | README edit (pull request #5) | Her 8 page files were committed by Matthew on 25 Nov |
+| 24 Nov | soniatech-dev | Sonia | Request wizard and map | Uploaded to the repository root; moved into `src/` on 25 Nov |
+| 24 Nov | aheebwaabraham78 | Abraham | Catalogue, cart and payment logic | Uploaded inside `05-ABRAHAM/`; moved on 25 Nov |
+| 24 Nov | GASHA BLESSING | Blessing | Home page, services pages, images | Uploaded inside `08-BLESSING/`; moved on 25 Nov |
+| 24 Nov | Batwega | Yvonne | Theme and form components; tests and evidence | Uploaded at the root and in numbered folders; moved on 25 Nov |
+| 25 Nov | Matthew | Matthew | Moved all misplaced files into the right folders (Git records them as moves, so authorship is kept); restored `not-found.js`; added the core order logic (step 4), Gladys's page files and the e2e script (step 13) | Build checked before pushing |
+
+GitHub accounts were matched to members by name and by the files committed; members should confirm their account names.
+
 ## Task log
 
 Keep a simple issue list on GitHub (*Issues* tab): one issue per task, assigned to its owner, closed by their pull request. The exam asks for an issue/task log as contribution evidence.

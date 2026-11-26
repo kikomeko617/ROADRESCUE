@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.1 - 25 November 2026
+- Hosted on Vercel at https://roadrescue-lime.vercel.app with a Turso database (AWS us-east-1, next to Vercel's default region). Fixed the HTTP 500 after the first deployment (missing environment variables, defect D8).
+- Repository tidied: files uploaded into numbered folders or the root were moved to their correct places; missing files added.
+- New: BPMN-style current and proposed process models (`docs/PROCESS_MODELS.md`, `docs/diagrams/process-*.png/.svg`) with the measured bottleneck B1.
+- Architecture, ERD and order-state images re-rendered from their 1.1 sources.
+- `LINKS.txt` filled in; the actual commit history added to `docs/ROLE_MATRIX.md`.
+- Tests re-run: 20 of 20 passed (`test-evidence/unit-test-output-2026-11-25.txt`).
+
 ## 1.1.0 - November 2026
 - **New look:** navy blue theme with the same orange, yellow and teal accents; Apple-style motion (headline reveal, scroll-triggered fade-ins, words that light up as you scroll, a pinned "three ways we rescue you" story, page transitions). All motion stops when "reduce motion" is on.
 - **Drivers** are a new, separate role with their own sign-up, approval, dashboard (`/driver`) and services (drive me home, move my car to a garage, airport run, driver for the day). Mechanics only see and accept mechanic jobs; drivers only driver jobs.
