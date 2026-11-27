@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import ScrollEffects from "@/components/ScrollEffects";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: { default: "ROADRESCUE - roadside help in one tap", template: "%s | ROADRESCUE" },
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
         <Suspense fallback={null}>
           <ScrollEffects />
         </Suspense>
+        <Analytics />
       </body>
     </html>
   );
